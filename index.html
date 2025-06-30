@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="img/LOGO.png" type="image/png">
+</head>
+<body>
+    
+    
+    <div class="bar" id="left-bar">
+        <img src="img/LOGO.png" alt="Sheefy Logo">
+        <button class="Theme-Btn"><i class="fa-solid fa-sun"></i></button>
+        <ul>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="download.html"><i class="fa-solid fa-download"></i> Download</a>
+            <a href="https://github.com/AqwozTheDeveloper/SheefyClient"><i class="fa-brands fa-github"></i> Github Page</a>
+            <a href="documents.html"><i class="fa-solid fa-book"></i> Document</a>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Sheefy Client. All rights reserved.</p>
+            <p>Made with ❤️ by AqwozTheDeveloper</p>
+    </footer>
+    
+
+    <div class="Middle" id="middle">
+        <h1>Welcome to Sheefy Client</h1>
+        <p>Your gateway to a seamless experience.</p>
+        <div class="buttons">
+            <button class="download-btn"><i class="fa-solid fa-download"> Download</i></button>
+            <button class="github-btn"><i class="fa-brands fa-github"> GitHub</i></button>
+        </div>
+
+        <div class="Devs-section">
+            <div class="devs">
+                
+                <div class="dev">
+                    <img src="img/Aqwoz_pp.jpg" alt="AqwozTheDeveloper">
+                    <h3>AqwozTheDeveloper</h3>
+                    <p>Lead Developer and Creator of Sheefy Client.</p>
+                    <a href="https://github.com/AqwozTheDeveloper"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    
+    
+    <script src="script/script.js"></script>
+    <script>
+        const texts = [
+            'Sheefy Client',
+            'Made with heart by AqwozTheDeveloper',
+            'Sheefy Website'
+        ]
+
+        const title = document.querySelector('title');
+        let index = 0;
+        function changeTitle() {
+            title.textContent = texts[index];
+            index = (index + 1) % texts.length;
+        }
+        setInterval(changeTitle, 3000); // Change title every 3 seconds
+    </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Special+Gothic+Expanded+One&display=swap');
+
+body{
+    font-family: 'Funnel Sans', 'Noto Sans', 'Outfit', 'Special Gothic Expanded One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0bfbf;
+    color: #333;
+}
+
+#left-bar{
+    width: 200px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+#left-bar a{
+    display: block;
+    padding: 20px 0 20px 0;
+    text-align: left;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+    border-radius: 4px;
+    padding-left: 0px;
+    justify-content: flex-start;
+    align-items: flex-start; /* Add this line */
+}
+
+#left-bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#left-bar a:hover{
+    background-color: #ddd;
+}
+
+#left-bar a.active{
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+#left-bar img{
+    display: block;
+    width: 54px;
+    height: 5 4px;
+    margin: 0 auto 20px auto;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c8c4c4;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border: #a8a6a6;
+    left: 240px;
+    right: 100px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+footer a{
+    color: #333;
+    text-decoration: none;
+}
+
+.Middle{
+    margin-left: 220px; /* Adjusted for left bar width */
+    padding: 20px;
+    background-color: #fff;
+    min-height: calc(100vh - 60px); /* Adjusted for footer height */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: flex-start; /* Move content towards the top */
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    color: #585858;
+    margin-top: 30px; /* Add some space from the top */
+}
+
+.Middle h1{
+    font-size: 56px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color:#000000;
+    
+}
+.Middle p{
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.Middle p:hover{
+    color: #000000;
+    text-decoration: underline;
+}
+
+.Middle button{
+    padding: 10px 20px;
+    background-color: #2e3131;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.Middle button:hover{
+    background-color: #cbcbcb;
+    color: #000;
+}
+
+
+.Middle img {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-top: 24px;
+    border-radius: 50%;
+    border: 4px solid #b0b0b0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 6px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.Middle img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.16), 0 3px 12px rgba(0,0,0,0.12);
+    animation: borderToBlack 0.6s forwards;
+}
+
+@keyframes borderToBlack {
+    to {
+        border-color: #000000;
+    }
+}
+
+.Middle .Devs-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 48px;
+    padding: 32px;
+    align-items: flex-start;
+    background: #fff;
+    border: 1.5px solid #b0b0b0;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 6px rgba(0,0,0,0.08);
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Middle .Devs-section a {
+    text-decoration: none;
+    color: #626262;
+    transition: color 0.3s ease;
+}
+
+.Middle .Devs-section a:hover {
+    color: #0c0c0c;
+}
+
+.Middle .Devs-section h3{
+    font-size: 24px;
+    margin-top: 16px;
+    font-weight: 600;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.Middle .Devs-section h3:hover {
+    animation: blackGrayColor 3.6s ease-in-out infinite;
+}
+
+@keyframes fadeInOutText {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blackGrayColor {
+    0% {
+        color: #000000;
+    }
+    50% {
+        color: #888888;
+    }
+    100% {
+        color: #000000;
+    }
+}
+
+#left-bar .Theme-Btn {
+    background: none;
+    border: none;
+    color: #858484;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#left-bar .Theme-Btn:hover {
+    color: #000000;
+}

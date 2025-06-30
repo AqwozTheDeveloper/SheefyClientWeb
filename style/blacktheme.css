@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Special+Gothic+Expanded+One&display=swap');
+
+body{
+    font-family: 'Funnel Sans', 'Noto Sans', 'Outfit', 'Special Gothic Expanded One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #eee;
+}
+
+#left-bar{
+    width: 200px;
+    height: 100vh;
+    background-color: #181818;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+#left-bar a{
+    display: block;
+    padding: 20px 0 20px 0;
+    text-align: left;
+    color: #eee;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+    border-radius: 4px;
+    padding-left: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#left-bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#left-bar a:hover{
+    background-color: #232323;
+}
+
+#left-bar a.active{
+    background-color: #333;
+    font-weight: bold;
+}
+
+#left-bar img{
+    display: block;
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 20px auto;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #181818;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+    border: none;
+    left: 240px;
+    right: 100px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+}
+
+footer a{
+    color: #eee;
+    text-decoration: none;
+}
+
+.Middle{
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #181818;
+    min-height: calc(100vh - 60px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    color: #eee;
+    margin-top: 30px;
+}
+
+.Middle h1{
+    font-size: 56px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color:#fff;
+}
+
+.Middle p{
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    color: #ccc;
+}
+
+.Middle p:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.Middle button{
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.Middle button:hover{
+    background-color: #fff;
+    color: #111;
+}
+
+.Middle img {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-top: 24px;
+    border-radius: 50%;
+    border: 4px solid #333;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.30), 0 1.5px 6px rgba(0,0,0,0.18);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.Middle img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.36), 0 3px 12px rgba(0,0,0,0.22);
+    animation: borderToBlack 0.6s forwards;
+}
+
+@keyframes borderToBlack {
+    to {
+        border-color: #fff;
+    }
+}
+
+.Middle .Devs-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 48px;
+    padding: 32px;
+    align-items: flex-start;
+    background: #232323;
+    border: 1.5px solid #333;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.30), 0 1.5px 6px rgba(0,0,0,0.18);
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Middle .Devs-section a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.Middle .Devs-section a:hover {
+    color: #fff;
+}
+
+.Middle .Devs-section h3{
+    font-size: 24px;
+    margin-top: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.Middle .Devs-section h3:hover {
+    animation: blackGrayColor 3.6s ease-in-out infinite;
+}
+
+@keyframes fadeInOutText {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blackGrayColor {
+    0% {
+        color: #fff;
+    }
+    50% {
+        color: #888;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+#left-bar .Theme-Btn {
+    background: none;
+    border: none;
+    color: #bbb;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#left-bar .Theme-Btn:hover {
+    color: #fff;
+}

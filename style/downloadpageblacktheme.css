@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Special+Gothic+Expanded+One&display=swap');
+
+body{
+    font-family: 'Funnel Sans', 'Noto Sans', 'Outfit', 'Special Gothic Expanded One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #18191a;
+    color: #e4e6eb;
+    min-height: 120vh;
+}
+
+#left-bar{
+    width: 200px;
+    height: 100vh;
+    background-color: #23272b;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+}
+
+#left-bar a{
+    display: block;
+    padding: 20px 0 20px 0;
+    text-align: left;
+    color: #e4e6eb;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding-left: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#left-bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#left-bar a:hover{
+    background-color: #313338;
+}
+
+#left-bar a.active{
+    background-color: #444950;
+    font-weight: bold;
+}
+
+#left-bar img{
+    display: block;
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 20px auto;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #23272b;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #b0b3b8;
+    border: none;
+    left: 240px;
+    right: 100px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+footer a{
+    color: #e4e6eb;
+    text-decoration: none;
+}
+
+.Middle {
+    margin-left: 220px;
+    margin-top: 40px;
+    padding: 32px 24px 80px 24px;
+    background: #242526;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.30), 0 1.5px 6px rgba(0,0,0,0.18);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e4e6eb;
+    font-size: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.Middle h1 {
+    font-size: 56px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Middle p {
+    font-size: 22px;
+    margin-bottom: 24px;
+    color: #b0b3b8;
+    line-height: 1.6;
+}
+
+.Middle .download-section {
+    margin: 32px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Middle .download-card {
+    background: #18191a;
+    border-radius: 12px;
+    padding: 32px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.Middle .download-btn {
+    background: #3a3b3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 16px;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Middle .download-btn:hover {
+    background: #e4e6eb;
+    color: #18191a;
+}
+
+.Middle .other-links {
+    margin: 24px 0;
+}
+
+.Middle .github-btn {
+    background: #24292f;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 22px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.Middle .github-btn:hover {
+    background: #444950;
+    color: #fff;
+}
+
+.Middle .release-notes {
+    margin-top: 32px;
+    width: 100%;
+    max-width: 600px;
+    background: #23272b;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+}
+
+.Middle .release-notes h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.Middle .release-notes ul {
+    font-size: 18px;
+    color: #b0b3b8;
+    margin: 0;
+    padding-left: 20px;
+}
+
+@keyframes fadeInOutText {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blackGrayColor {
+    0% {
+        color: #fff;
+    }
+    50% {
+        color: #888888;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+#left-bar .Theme-Btn {
+    background: none;
+    border: none;
+    color: #b0b3b8;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#left-bar .Theme-Btn:hover {
+    color: #fff;
+}

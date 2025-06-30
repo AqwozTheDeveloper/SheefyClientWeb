@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download | Sheefy Client</title>
+    <link rel="stylesheet" href="style/downloadpage.css"own>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="img/LOGO.png" type="image/png">
+</head>
+<body>
+    <div class="bar" id="left-bar">
+        <img src="img/LOGO.png" alt="Sheefy Logo">
+        <button class="Theme-Btn"><i class="fa-solid fa-sun"></i></button>
+        <ul>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="download.html"><i class="fa-solid fa-download"></i> Download</a>
+            <a href="https://github.com/AqwozTheDeveloper/SheefyClient"><i class="fa-brands fa-github"></i> Github Page</a>
+            <a href="documents.html"><i class="fa-solid fa-book"></i> Document</a>
+        </ul>
+    </div>
+
+    <div class="Middle" id="middle">
+        <h1>Download</h1>
+        <p>Download the latest version of Sheefy Client Installer (Minecraft Mod) as a Java file below.</p>
+        <div class="download-section">
+            <div class="download-card">
+                <i class="fa-brands fa-java fa-2x"></i>
+                <h3>Universal (Java)</h3>
+                <a href="downloads/SheefyClient-latest.jar" class="download-btn" download>
+                    <i class="fa-solid fa-download"></i> Download SheefyClient.jar
+                </a>
+            </div>
+        </div>
+        <div class="other-links">
+            <a href="https://github.com/AqwozTheDeveloper/SheefyClient" class="github-btn">
+                <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+        </div>
+        <div class="release-notes">
+            <h2>Release Notes</h2>
+            <ul>
+                <li>Latest version: v1.0.0</li>
+                <li>Initial release with core features and improved stability.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Sheefy Client. All rights reserved.</p>
+            <p>Made with ❤️ by AqwozTheDeveloper</p>
+        </div>
+    </footer>
+    <script src="script/downloadpage.js"></script>
+    <script>
+        const texts = [
+            'Download | Sheefy Client',
+            'Get Sheefy Client for your OS',
+            'Sheefy Download Page'
+        ]
+        const title = document.querySelector('title');
+        let index = 0;
+        function changeTitle() {
+            title.textContent = texts[index];
+            index = (index + 1) % texts.length;
+        }
+        setInterval(changeTitle, 3000);
+    </script>
+</body>
+</html>
