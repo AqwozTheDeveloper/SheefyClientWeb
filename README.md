@@ -35,4 +35,4 @@ Welcome to the Sheefy Client website! This site provides information, documentat
 - [GitHub Repository](https://github.com/AqwozTheDeveloper/SheefyClient)
 
 ---
-© 2025 Sheefy Client. All rights reserved.
+
